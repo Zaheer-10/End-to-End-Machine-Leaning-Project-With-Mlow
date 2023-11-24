@@ -18,7 +18,7 @@ class DataIngestion:
 
     
     def download_file(self):
-        retries = 5
+        retries = 10
         for i in range(retries):
             try:
                 if not os.path.exists(self.config.local_data_file):
@@ -33,7 +33,7 @@ class DataIngestion:
             except Exception as e:
                 if i < retries - 1:
                     logger.warning(f"Retry {i + 1} due to connection issue: {e}")
-                    time.sleep(5)  # Wait before retrying
+                    time.sleep(10)  # Wait before retrying
                 else:
                     raise  # If retries are exhausted, raise the exception
                 
