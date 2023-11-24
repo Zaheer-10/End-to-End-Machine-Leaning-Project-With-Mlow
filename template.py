@@ -35,7 +35,7 @@ list_of_files = [
     
     'config/config.yaml',
     # 'dvc.yaml',
-    'params.yaml'
+    'params.yaml',
     'schema.yaml',
     
     'main.py',

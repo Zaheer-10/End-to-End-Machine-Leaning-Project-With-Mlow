@@ -1,0 +1,12 @@
+# """
+# The config.yaml file in your application serves as a centralized location to store all of your application's settings and configuration details. This approach ensures that your settings are consistent throughout your application and are easy to manage and update.
+
+# """
+
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_url: https://github.com/Zaheer-10/Feature_Engineerning/raw/master/data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
