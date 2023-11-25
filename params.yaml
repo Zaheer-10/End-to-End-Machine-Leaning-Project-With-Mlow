@@ -1,1 +1,12 @@
-key: val
+ElasticNet:
+  alpha: 0.5
+  l1_ratio: 0.7
+  # fit_intercept: true
+  # normalize: false
+  # precompute: false
+  # max_iter: 1000
+  # copy_X: true
+  # tol: 0.0001
+  # verbose: 0
+  # warm_start: false
+  random_state: 42
